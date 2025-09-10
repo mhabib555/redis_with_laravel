@@ -4,7 +4,7 @@ This project demonstrates how to integrate Redis caching and queues into a Larav
 ### Features
 - Fetch best-selling products from the database.
 - Cache the results using Redis to reduce database load.
-- Automatically invalidate the cache when product data changes.
+- Automatically invalidate the cache when product data changes using model observers.
 - Use Laravel queues using Redis for background processing.
 - Queue a job to send Best Selling Products report via email.
 - Simple React frontend to display best-selling products.
@@ -19,8 +19,8 @@ This project demonstrates how to integrate Redis caching and queues into a Larav
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone 
-    cd laravel-redis-integration
+   git clone https://github.com/mhabib555/redis_with_laravel
+    cd redis_with_laravel
     ```
 2. Install PHP dependencies:
     ```bash
